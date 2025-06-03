@@ -1,0 +1,25 @@
+
+.drawer {
+  background: linear-gradient(to bottom, #6179FF, #0ee0a8);
+}
+.header {
+  background: linear-gradient(to right, #6179FF, #0ee0a8);
+}
+
+.logo-container {
+  align-items:"center";
+  display:"flex";
+  margin: 0;
+  width:"30%";
+}
+.imagotype {
+  width: 20%;
+}
+.isotype {
+  width: 60%;
+}
+.logotype {
+  margin-left: 2%;
+  width: 65%;
+}
+
