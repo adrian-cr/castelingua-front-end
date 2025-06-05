@@ -1,7 +1,8 @@
 import React from 'react'
-import "./HomeNavBar.css";
-import {AppBar, Box, Button, Container, CssBaseline, Divider, Drawer, Grid, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography} from "@mui/material";
+import "./SearchBars/DrawerSearchBar.css";
+import {AppBar, Box, Button, Container, CssBaseline, Divider, Drawer, Grid, IconButton, Link, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu"
+import DrawerSearchBar from './SearchBars/DrawerSearchBar';
 
 
 const drawerWidth = 240;
@@ -21,18 +22,30 @@ export default function HomeNavBar() {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-
+  // Prevent drawer from closing when clicking inside the DrawerSearchBar input
+  const handleDrawerClick = (event) => {
+    // If the click originated from inside the search bar, don't close the drawer
+    if (
+      event.target.closest('.search-bar-container') || // adjust selector to your DrawerSearchBar root class
+      event.target.closest('input[type="text"]')
+    ) {
+      event.stopPropagation();
+    } else {
+      handleDrawerToggle();
+    }
+  };
   const drawer = (
-    <Box className="drawer" onClick={handleDrawerToggle}
+    <Box className="drawer" onClick={handleDrawerClick}
       sx={{
         height: "100%",
         textAlign:"center"
       }}
     >
-      <Button className="logo-container" href="/">
+      <Container className="logo-container">
         <img className="isotype" src="../images/isotype_white_seethrough.png"/>
-      </Button>
+      </Container>
       <Divider/>
+      <DrawerSearchBar></DrawerSearchBar>
       <List>
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding>
@@ -80,8 +93,9 @@ export default function HomeNavBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Button href="/" className="logo-container"
+          <Button className="logo-container" href="/"
             sx={{
+              alignContent: "center",
               alignItems:"center",
               display:"flex",
               margin: 0,
