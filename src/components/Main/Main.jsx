@@ -1,7 +1,7 @@
 import React from "react";
 import "./Main.css";
-import SearchBar from "./SearchBar";
 import { Box, Container } from "@mui/material";
+import SearchBar from "./SearchBar/SearchBar";
 
 export default function Main() {
   return (
