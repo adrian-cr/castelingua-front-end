@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/searchbars/DrawerSearchbar.css";
+import "../../styles/components/searchbars/DrawerSearchbar.css";
 import TextField from "@mui/material/TextField";
 import { Container } from "@mui/material";
 

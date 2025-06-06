@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/searchbars/MainSearchbar.css";
+import "../../styles/components/searchbars/MainSearchbar.css";
 import TextField from "@mui/material/TextField";
 import { Container } from "@mui/material";
 
