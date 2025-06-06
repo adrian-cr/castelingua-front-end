@@ -1,8 +1,9 @@
 import React from 'react'
-import "./SearchBars/DrawerSearchBar.css";
+import "../styles/searchbars/DrawerSearchbar.css";
+import "../styles/searchbars/HeaderSearchbar.css";
 import {AppBar, Box, Button, Container, CssBaseline, Divider, Drawer, Grid, IconButton, Link, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu"
-import DrawerSearchBar from './SearchBars/DrawerSearchBar';
+import DrawerSearchBar from "./searchbars/DrawerSearchbar";
 
 
 const drawerWidth = 240;

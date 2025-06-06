@@ -1,7 +1,7 @@
 main {
   align-content: center;
   align-items: center;
-  background-image: url('../../../public/images/background.jpg');
+  background-image: url('../../public/images/background.jpg');
   background-position: center;
   background-size: cover !important;
   display: flex;

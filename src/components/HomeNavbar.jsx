@@ -1,5 +1,5 @@
 import React from 'react'
-import "./HomeNavBar.css";
+import "../styles/HomeNavbar.css";
 import {AppBar, Box, Button, Container, CssBaseline, Divider, Drawer, Grid, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu"
 

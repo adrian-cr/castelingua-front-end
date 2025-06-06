@@ -1,14 +1,14 @@
 import React from "react";
-import "./Main.css";
+import "../styles/Main.css";
 import { Box, Container } from "@mui/material";
-import SearchBar from "./SearchBar/SearchBar";
+import Searchbar from "./searchbars/MainSearchbar";
 
 export default function Main() {
   return (
     <main>
       <Container id="main-wrapper">
         <Box component="img" id="logo" src="./images/isotype_indigo_seethrough.png"/>
-        <SearchBar></SearchBar>
+        <Searchbar></Searchbar>
       </Container>
 
     </main>

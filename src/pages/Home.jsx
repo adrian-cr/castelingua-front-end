@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import HomeNavBar from '../components/HomeNavBar/HomeNavBar'
-import Main from '../components/Main/Main'
+import HomeNavBar from '../components/HomeNavbar'
+import Main from '../components/Main'
 export default class Home extends Component {
   render() {
     return (
