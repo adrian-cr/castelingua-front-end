@@ -67,7 +67,7 @@ export default function HomeNavBar() {
             display:"flex",
             justifyContent:"space-between",
             margin: 0,
-            padding: "10px 0 10px 20px",
+            padding: "10px 20px",
             width: "100vw"
           }}
         >
@@ -80,19 +80,7 @@ export default function HomeNavBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Button href="/" className="logo-container"
-            sx={{
-              alignItems:"center",
-              display:"flex",
-              margin: 0,
-              width: {
-                xs: "50%",
-                sm: "40%",
-                md: "30%",
-                lg: "25%"
-              }
-            }}
-          >
+          <Button href="/" className="logo-container">
             <img className="imagotype" src="../images/imagotype_white_seethrough.png"/>
             <img className="logotype" src="../images/logotype_white.png"/>
           </Button>
@@ -109,7 +97,7 @@ export default function HomeNavBar() {
                 sx={{
                   color: "aliceblue",
                   fontWeight: 800,
-                  marginRight: "35px"
+                  marginRight: "20px"
                 }}
               >
                 {item.label}

@@ -1,9 +1,11 @@
 import React from 'react'
+import "../styles/Navbar.css"
 import "../styles/searchbars/DrawerSearchbar.css";
 import "../styles/searchbars/HeaderSearchbar.css";
 import {AppBar, Box, Button, Container, CssBaseline, Divider, Drawer, Grid, IconButton, Link, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu"
 import DrawerSearchBar from "./searchbars/DrawerSearchbar";
+import HeaderSearchbar from "./searchbars/HeaderSearchbar";
 
 
 const drawerWidth = 240;
@@ -17,7 +19,7 @@ const navItems = [
     relPath: "/contacto"
   }];
 
-export default function HomeNavBar() {
+export default function Navbar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -36,14 +38,14 @@ export default function HomeNavBar() {
     }
   };
   const drawer = (
-    <Box className="drawer" onClick={handleDrawerClick}
+    <Box id="nb-drawer" onClick={handleDrawerClick}
       sx={{
         height: "100%",
         textAlign:"center"
       }}
     >
       <Container className="logo-container">
-        <img className="isotype" src="../images/isotype_white_seethrough.png"/>
+        <img id="nb-isotype" src="../images/isotype_white_seethrough.png"/>
       </Container>
       <Divider/>
       <DrawerSearchBar></DrawerSearchBar>
@@ -65,7 +67,7 @@ export default function HomeNavBar() {
   );
 
   return (
-    <Box id="navBar"
+    <Box id="navbar"
       sx={{
         display: 'flex'
       }}
@@ -75,47 +77,43 @@ export default function HomeNavBar() {
         sx={{
           padding:0
         }}
-      >
-        <Toolbar className="header"
+      >{/* HEADER */}
+        <Toolbar id="nb-header"
           sx={{
-            display:"flex",
-            justifyContent:"space-between",
-            margin: 0,
-            padding: "10px 0 10px 20px",
-            width: "100vw"
+
           }}
         >
+          {/* BURGER MENU */}
           <IconButton color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle}
             sx={{
               display: {
-                sm: 'none'
+                md: 'none'
               }
             }}
           >
             <MenuIcon />
           </IconButton>
-          <Button className="logo-container" href="/"
-            sx={{
-              alignContent: "center",
-              alignItems:"center",
-              display:"flex",
-              margin: 0,
-              width: {
-                xs: "50%",
-                sm: "40%",
-                md: "30%",
-                lg: "25%"
+          {/* HEADER LOGO */}
+          <Button id="nb-logo-container" href="/">
+            <img id="nb-imagotype" src="../images/imagotype_white_seethrough.png"/>
+            <img id="nb-logotype" src="../images/logotype_white.png"/>
+          </Button>
+          {/* HEADER SEARCHBAR */}
+          <Container id="nb-searchbar" sx={{
+              display: {
+                xs: "none",
+                md: "block"
               }
             }}
           >
-            <img className="imagotype" src="../images/imagotype_white_seethrough.png"/>
-            <img className="logotype" src="../images/logotype_white.png"/>
-          </Button>
-          <Box
+            <HeaderSearchbar/>
+          </Container>
+          {/* NAV LINKS */}
+          <Box id="nb-link-list"
             sx={{
               display: {
                 xs: 'none',
-                sm: 'block'
+                md: 'block'
                 }
             }}
           >
@@ -124,7 +122,7 @@ export default function HomeNavBar() {
                 sx={{
                   color: "aliceblue",
                   fontWeight: 800,
-                  marginRight: "35px"
+                  marginRight: "20px"
                 }}
               >
                 {item.label}
@@ -134,9 +132,10 @@ export default function HomeNavBar() {
         </Toolbar>
       </AppBar>
       <nav>
+        {/* DRAWER NAV */}
         <Drawer variant="temporary" open={mobileOpen} onClose={handleDrawerToggle} ModalProps={{keepMounted: true}}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { sm: 'block', md: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
         >

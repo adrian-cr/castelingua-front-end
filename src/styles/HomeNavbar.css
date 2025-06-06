@@ -14,7 +14,8 @@
   align-items:"center";
   display:"flex";
   margin: 0;
-  width:"30%";
+  min-width: 250px;
+  max-width: 250px;
 }
 .imagotype {
   width: 20%;

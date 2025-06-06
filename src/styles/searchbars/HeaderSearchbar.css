@@ -1,29 +1,35 @@
-#search-bar-2 {
-  background-color: #fff;
+/* Searchbar Container */
+#header-search-bar {
+  border-radius: 5px 0 0 0;
   display: flex;
   overflow: hidden;
   padding: 0;
+  width: 100%;
 }
 
-#search-field-2 {
+/* Text Field */
+#hsb-search-field {
   background-color: white;
   font-size: calc(1vw + 1vh);
-  height:2vh;
-  padding-bottom: 20px;
+  height:3vh;
+  padding: 12px;
+  &:hover {
+    font-size: calc(1vw + 1.5vh);
+    transition: 300ms;
+  }
 }
 
-#search-field-2:focus {
-  font-size: calc(2vw + 1.5vh);
-  transition: 300ms;
-}
 
-#search-button-2 {
+
+/* Button */
+#hsb-search-button {
   background-color: white;
   border: none;
   border-bottom: solid 1px rgb(141, 141, 141);
-}
-#search-button-2:hover {
+  border-radius: 0 5px 0 0;
+  &:hover {
     background-color: rgb(215, 250, 244);
     cursor: pointer;
     transition: 300ms;
   }
+}

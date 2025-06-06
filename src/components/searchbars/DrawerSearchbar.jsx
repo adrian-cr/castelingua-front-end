@@ -5,15 +5,15 @@ import { Container } from "@mui/material";
 
 export default function SearchBar() {
   return (
-    <Container id="search-bar-2">
-      <TextField id="search-field-2" variant="filled" size="small" placeholder="Escriba aquí una palabra" fullWidth
+    <Container id="drawer-search-bar">
+      <TextField id="dsb-search-field" variant="filled" size="small" placeholder="Escriba aquí una palabra" fullWidth
         sx={{
           "& .MuiOutlinedInput-root": {
             borderRadius: 2,
           }
         }}
       />
-      <button id="search-button-2">
+      <button id="dsb-search-button">
         <img src="./images/search.svg"/>
       </button>
     </Container>
