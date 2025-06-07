@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import "../styles/pages/Home.css"
 import HomeNavBar from '../components/HomeNavbar'
-import MainSearchbar from '../components/searchbars/MainSearchbar'
+import MainSearchbar from '../components/subcomponents/searchbars/MainSearchbar'
 import { Box, Container } from '@mui/material'
 export default class Home extends Component {
   render() {
