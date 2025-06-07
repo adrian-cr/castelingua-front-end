@@ -1,11 +1,11 @@
 import React from 'react'
 import "../styles/components/Navbar.css"
-import "../styles/components/searchbars/DrawerSearchbar.css";
-import "../styles/components/searchbars/HeaderSearchbar.css";
+import "../styles/components/subcomponents/searchbars/DrawerSearchbar.css";
+import "../styles/components/subcomponents/searchbars/HeaderSearchbar.css";
 import {AppBar, Box, Button, Container, CssBaseline, Divider, Drawer, Grid, IconButton, Link, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu"
-import DrawerSearchBar from "./searchbars/DrawerSearchbar";
-import HeaderSearchbar from "./searchbars/HeaderSearchbar";
+import DrawerSearchBar from "./subcomponents/searchbars/DrawerSearchbar";
+import HeaderSearchbar from "./subcomponents/searchbars/HeaderSearchbar";
 
 
 const drawerWidth = 240;
