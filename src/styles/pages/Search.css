@@ -2,7 +2,7 @@
 #search-main {
   background-color: #fff;
   box-sizing: border-box !important;
-  margin: 10% 5%;
+  margin: 10% 5% 5%;
   min-height: 60vh;
   padding: 1% 3%;
 }
@@ -14,7 +14,28 @@
 }
 
 #resources {
-  background: linear-gradient(25deg, #ffffff 0%, #fff 75%, #e3f0fa 100%);
   width: 100%;
   min-height: 300px;
+}
+
+.etymology {
+  color: rgb(18, 184, 93);
+  font-style: italic;
+}
+
+.link:not(.internal) {
+  color: #ad2ffc;
+  &:hover {
+    color: #2aa1e0;
+    transition: 400ms;
+  }
+}
+
+/* DPD */
+em {
+  color: #3c789a;
+}
+
+span.example-sentence {
+  color: #179090
 }
