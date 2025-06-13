@@ -1,5 +1,7 @@
 const { isLastArrEl } = require("./checkers");
 
+export const capitalize = str => str.slice(0,1).toUpperCase() + str.slice(1);
+
 export const commaSepList = arr => {
   return arr.map(term => " " + term + (!isLastArrEl(arr, term)? "," : "."))
 }
