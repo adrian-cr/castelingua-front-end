@@ -7,6 +7,7 @@ import { Container } from '@mui/material';
 import ResourceTabs from '../components/ResourceTabs';
 import NotFoundScreen from "../components/NotFoundScreen";
 import Spinner from "../components/Spinner";
+import Footer from "../components/Footer";
  const Search = () => {
   const {word} = useParams();
   const [wordData, setWordData] = useState({});
@@ -64,23 +65,24 @@ import Spinner from "../components/Spinner";
   }, [word]);
 
   return (
-    <main className="search-main">
-      <Navbar></Navbar>
+    <>
+      <Navbar/>
       {loading && <Spinner/>}
       {
         !isObjEmpty(wordData)?
-        <div className="search-container">
-          <h1 id="term">{word}</h1>
-          {
-          <Container id="resources">
-            <ResourceTabs wordData={wordData}/>
-          </Container>
-          }
-    </div>
+          <main className="search-container">
+            <h1 id="term">{word}</h1>
+            {
+            <Container id="resources">
+              <ResourceTabs wordData={wordData}/>
+            </Container>
+            }
+          </main>
         :
-        !loading && <NotFoundScreen type="search" word={word}/>
+          !loading && <NotFoundScreen type="search" word={word}/>
       }
-    </main>
+      {!loading && <Footer/>}
+    </>
   )
 }
 

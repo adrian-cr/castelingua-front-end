@@ -3,6 +3,7 @@ import "../styles/pages/Home.css"
 import HomeNavBar from '../components/HomeNavbar'
 import MainSearchbar from '../components/subcomponents/searchbars/MainSearchbar'
 import { Box, Container } from '@mui/material'
+import Footer from '../components/Footer'
 export default class Home extends Component {
   render() {
     return (
@@ -14,6 +15,7 @@ export default class Home extends Component {
             <MainSearchbar/>
           </Container>
         </main>
+        <Footer/>
       </>
     )
   }
