@@ -28,9 +28,10 @@
 #hsb-search-button {
   background-color: rgba(255, 255, 255, 0);
   border: none;
+  display: flex;
   height: 100%;
   position: relative;
-  right: 50px;
+  right: 40px;
   &:hover {
     cursor: pointer;
     transition: 300ms;

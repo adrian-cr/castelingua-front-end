@@ -40,6 +40,6 @@
   width: 40%;
 }
 
-/* Nav List */
-#nb-link-list {
+.disabled {
+  pointer-events: none;
 }

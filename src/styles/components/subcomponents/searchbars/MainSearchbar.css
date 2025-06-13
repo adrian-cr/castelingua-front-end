@@ -13,7 +13,11 @@
 #search-button {
   border: none;
   background-color: #ffffff00;
-  transform: translateX(-50px) translateY(3px);
+  display: flex;
+  transform: translateX(-50px);
+  img {
+    width: 40px;
+  }
 }
 #search-button:hover {
     cursor: pointer;
