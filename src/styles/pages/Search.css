@@ -1,10 +1,29 @@
 
-#search-main {
+em, dfn {
+  color: #275f9f;
+}
+
+dfn {
+  font-weight: 600;
+}
+
+span.example-sentence {
+  color: #09a4bc;
+  font-style: italic;
+}
+
+.search-main {
+  min-height: 100vh;
+}
+
+.search-container {
   background-color: #fff;
   box-sizing: border-box !important;
+  justify-self: center;
   margin: 10% 5% 5%;
-  min-height: 60vh;
+  min-height: 70vh;
   padding: 1% 3%;
+  width: 90%;
 }
 
 #term {
@@ -19,23 +38,34 @@
 }
 
 .etymology {
-  color: rgb(18, 184, 93);
+  color: rgb(191, 138, 4);
   font-style: italic;
 }
 
 .link:not(.internal) {
-  color: #ad2ffc;
+  color: #0ba27f;
   &:hover {
     color: #2aa1e0;
     transition: 400ms;
   }
+  &.gtg-link {
+    font-weight: 500;
+  }
 }
 
-/* DPD */
-em {
-  color: #3c789a;
+/* GTG */
+.gtg-div {
+  margin-bottom: 50px;
 }
-
-span.example-sentence {
-  color: #179090
+.gtg-intro {
+  background-color: #f5fefb;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.gtg-intro-p {
+  margin: 0;
+}
+.gtg-img {
+  max-width: 100%;
 }
