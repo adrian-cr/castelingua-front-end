@@ -36,7 +36,7 @@ export default function SearchBar() {
         onKeyUp={handleKeyPress}
       />
       <Link className={query? "" : "disabled"} to={`/búsqueda/${query}`} id="dsb-search-button">
-        <img src="./images/search.svg"/>
+        <img src="/images/search.svg"/>
       </Link>
     </Container>
   );

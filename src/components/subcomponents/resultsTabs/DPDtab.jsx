@@ -29,7 +29,7 @@ export default function DPDTab({entries}) {
   return (
     <ul>
     {
-      entries.map(e =>
+      entries && entries.map(e =>
         <li>
           {
             e.splitText.map(f => {
