@@ -13,10 +13,6 @@ span.example-sentence {
 }
 
 .search-main {
-  min-height: 100vh;
-}
-
-.search-container {
   background-color: #fff;
   box-sizing: border-box !important;
   justify-self: center;

@@ -70,7 +70,7 @@ import Footer from "../components/Footer";
       {loading && <Spinner/>}
       {
         !isObjEmpty(wordData)?
-          <main className="search-container">
+          <main className="search-main">
             <h1 id="term">{word}</h1>
             {
             <Container id="resources">
