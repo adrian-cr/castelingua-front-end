@@ -15,8 +15,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/búsqueda/:word" element={<Search/>}/>
           <Route path="/nosotros" element={<About/>}/>
-          <Route path="/contacto" element={<Contact/>}/>
-        </Routes>
+       {/*<Route path="/contacto" element={<Contact/>}/>*/}        </Routes>
       </div>
     </AppProvider>
 

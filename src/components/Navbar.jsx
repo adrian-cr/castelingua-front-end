@@ -14,10 +14,10 @@ const navItems = [
     label:'Sobre Nosotros',
     relPath: "/nosotros"
   },
-  {
+  /* {
     label: 'Contacto',
     relPath: "/contacto"
-  }];
+  } */];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);

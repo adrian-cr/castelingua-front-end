@@ -10,10 +10,10 @@ const navItems = [
     label:'Sobre Nosotros',
     relPath: "/nosotros"
   },
-  {
+  /* {
     label: 'Contacto',
     relPath: "/contacto"
-  }];
+  } */];
 
 export default function HomeNavBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);

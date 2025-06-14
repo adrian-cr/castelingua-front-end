@@ -12,7 +12,8 @@ export default function About() {
       <Navbar/>
       <main className="about-main">
         <h1 className="main-header">¿Qué es&nbsp;<img className="main-header-logo" src="/images/logotype_indigo.png"/>?</h1>
-        <section className="main-section">
+        <section className="main-section reverse-flow">
+          <FlagOrbit/>
           <p className="main-section-p">
             Castelingua es una plataforma de consulta
             que busca facilitar y agilizar el acceso a los diversos
@@ -20,7 +21,7 @@ export default function About() {
             instituciones difusoras de la lengua española y las culturas
             de las comunidades hispanohablantes.
           </p>
-          <FlagOrbit/>
+
         </section>
         <h2 className="main-section-heading">¿Cómo funciona?</h2>
         <section className="main-section">
@@ -33,7 +34,8 @@ export default function About() {
           </p>
         </section>
         <h2 className="main-section-heading">¿Nuestro objetivo?</h2>
-        <section className="main-section">
+        <section className="main-section reverse-flow">
+          <WorldOrbit/>
           <p className="main-section-p">
             Ser una herramienta de consulta universal y confiable
             para lingüistas, traductores, académicos y todo internauta con dudas
@@ -41,7 +43,6 @@ export default function About() {
             recursos publicados por autoridades académicas de prestigio y
             centralizando su acceso.
           </p>
-          <WorldOrbit/>
         </section>
       </main>
       <Footer/>
